@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include <unordered_map>
 #include <string>
 using namespace std;
@@ -21,4 +22,17 @@ int main() {
 		cout << "Key: " << it -> first << " Value: " << it -> second << endl;
 		it++;
 	}
+
+	vector<int> v;
+	//vector<int> :: iterator it1 = v.begin();
+	v.push_back(1);
+	v.push_back(2);
+	v.push_back(3);
+	v.push_back(4);
+	
+	vector<int> :: iterator it1 = v.begin();
+	while(it1 != v.end()){
+		cout << *it1 << endl;
+		it1++;
+	}	
 }
